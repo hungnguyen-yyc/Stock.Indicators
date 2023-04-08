@@ -12,4 +12,12 @@ public static partial class Indicator
         where TQuote : IQuote => quotes
             .ToQuoteD()
             .CalcVwma(lookbackPeriods);
+
+    public static IEnumerable<VwmaResult> GetVwma<TQuote>(
+        this IEnumerable<TQuote> quotes,
+        int lookbackPeriods,
+        CandlePart candlePart)
+        where TQuote : IQuote => quotes
+            .ToQuoteD()
+            .CalcVwma(lookbackPeriods, candlePart);
 }
