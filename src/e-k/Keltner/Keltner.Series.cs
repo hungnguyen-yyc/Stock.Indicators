@@ -7,7 +7,8 @@ public static partial class Indicator
         this List<QuoteD> qdList,
         int emaPeriods,
         double multiplier,
-        int atrPeriods)
+        int atrPeriods,
+        CandlePart part = CandlePart.Close)
     {
         // check parameter arguments
         ValidateKeltner(emaPeriods, multiplier, atrPeriods);
@@ -17,7 +18,7 @@ public static partial class Indicator
         List<KeltnerResult> results = new(length);
 
         List<EmaResult> emaResults = qdList
-            .ToTuple(CandlePart.Close)
+            .ToTuple(part)
             .CalcEma(emaPeriods)
             .ToList();
 

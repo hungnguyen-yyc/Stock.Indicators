@@ -10,8 +10,9 @@ public static partial class Indicator
         this IEnumerable<TQuote> quotes,
         int emaPeriods = 20,
         double multiplier = 2,
-        int atrPeriods = 10)
+        int atrPeriods = 10,
+        CandlePart candlePart = CandlePart.Close)
         where TQuote : IQuote => quotes
             .ToQuoteD()
-            .CalcKeltner(emaPeriods, multiplier, atrPeriods);
+            .CalcKeltner(emaPeriods, multiplier, atrPeriods, candlePart);
 }
