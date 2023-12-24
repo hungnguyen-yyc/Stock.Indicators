@@ -13,6 +13,14 @@ public static partial class Indicator
             .ToTuple(CandlePart.Close)
             .CalcSma(lookbackPeriods);
 
+    public static IEnumerable<SmaResult> GetSma<TQuote>(
+        this IEnumerable<TQuote> quotes,
+        CandlePart candlePart,
+        int lookbackPeriods)
+        where TQuote : IQuote => quotes
+            .ToTuple(candlePart)
+            .CalcSma(lookbackPeriods);
+
     // SERIES, from CHAIN
     public static IEnumerable<SmaResult> GetSma(
         this IEnumerable<IReusableResult> results,

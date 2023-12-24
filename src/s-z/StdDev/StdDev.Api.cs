@@ -14,6 +14,15 @@ public static partial class Indicator
             .ToTuple(CandlePart.Close)
             .CalcStdDev(lookbackPeriods, smaPeriods);
 
+    public static IEnumerable<StdDevResult> GetStdDev<TQuote>(
+        this IEnumerable<TQuote> quotes,
+        CandlePart candlePart,
+        int lookbackPeriods,
+        int? smaPeriods = null)
+        where TQuote : IQuote => quotes
+            .ToTuple(candlePart)
+            .CalcStdDev(lookbackPeriods, smaPeriods);
+
     // SERIES, from CHAIN
     public static IEnumerable<StdDevResult> GetStdDev(
         this IEnumerable<IReusableResult> results,
