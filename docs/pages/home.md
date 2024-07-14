@@ -9,14 +9,8 @@ lazy-images: true
 ---
 
 <p style="text-align:center;">
-<a href="https://www.nuget.org/packages/Skender.Stock.Indicators" aria-label="Get the NuGet package." class="not-mobile">
-  <img src="https://img.shields.io/nuget/v/skender.stock.indicators?logo=NuGet&label=NuGet%20Package&color=blue&cacheSeconds=259200"
-  alt="" width="170" height="20" />
-</a>
-<a href="https://www.nuget.org/packages/Skender.Stock.Indicators" aria-label="Read more about package downloads." class="not-mobile">
-  <img src="https://img.shields.io/nuget/dt/skender.stock.indicators?logo=NuGet&label=Downloads&cacheSeconds=259200"
-  alt="" width=130 height="20" />
-</a>
+<a href="https://www.nuget.org/packages/Skender.Stock.Indicators" aria-label="Get the NuGet package." class="not-mobile"><img src="https://img.shields.io/nuget/v/skender.stock.indicators?logo=NuGet&label=NuGet%20Package&color=blue&cacheSeconds=259200" alt="" width="170" height="20" /></a>
+<a href="https://www.nuget.org/packages/Skender.Stock.Indicators" aria-label="Read more about package downloads." class="not-mobile"><img src="https://img.shields.io/nuget/dt/skender.stock.indicators?logo=NuGet&label=Downloads&cacheSeconds=259200" alt="" width=130 height="20" /></a>
 </p>
 
 <h1 style="display:none;">{{ page.title }}</h1>
@@ -78,7 +72,7 @@ See the [guide]({{site.baseurl}}/guide/#content) and the [full list of indicator
 
 Our [NuGet library](https://www.nuget.org/packages/Skender.Stock.Indicators) directly targets all current frameworks for peak performance, including the .NET Standard for older framework compatibility.
 
-- .NET 7.0, 6.0
+- .NET 8.0, 7.0, 6.0
 - .NET Standard 2.1, 2.0
 
 The compiled library package is [Common Language Specification (CLS) compliant](https://docs.microsoft.com/en-us/dotnet/standard/common-type-system) and can be used in other programming languages, including Python and everything in the .NET universe.
@@ -97,7 +91,7 @@ This repository uses the standard Apache 2.0 open-source license.  Please review
 
 Thank you for your support!  This software is crafted with care by unpaid enthusiasts who &#128150; all forms of encouragement.  If you or your organization use this library or like what we're doing, add a &#11088; on the [GitHub Repo]({{site.github.repository_url}}) as a token of appreciation.
 
-If you want to buy me a beer or are interested in ongoing support as a patron, [become a sponsor](https://github.com/sponsors/DaveSkender).  Patronage motivates continued maintenance and evolution of open-source projects, and to inspire new ones.
+If you want to buy me a beer or are interested in ongoing support as a patron, [become a sponsor](https://github.com/sponsors/facioquo).  Patronage motivates continued maintenance and evolution of open-source projects, and to inspire new ones.
 
 ## Contribute to help others
 
